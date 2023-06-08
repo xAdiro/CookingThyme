@@ -2,9 +2,42 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <link th:href="@{/css/home.css}" rel="stylesheet">
     <title>Title</title>
 </head>
 <body>
-    <h1>Hello to CookingThyme</h1>
+    <nav class="main-menu">
+        <a class="main-menu__logo">Cooking<br>Thyme</a>
+        <ul class="main-menu__list">
+            <li>
+                Home
+            </li>
+            <li>
+                Search Recipe
+            </li>
+            <li>
+                Your Recipes
+            </li>
+            <li>
+                Favourites
+            </li>
+        </ul>
+        <div class="main-menu__login-box">
+            Log In
+        </div>
+    </nav>
+    <main>
+        <section>
+            <h1>Welcome to Cooking Thyme!</h1>
+            <p>
+                Cooking Thyme is a platform where you can find and publish your delicious recipes.
+                Search feature
+            </p>
+        </section>
+
+    </main>
+    <footer>
+        Adrian Rostek © 2023
+    </footer>
 </body>
 </html>
