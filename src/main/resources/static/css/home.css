@@ -11,3 +11,49 @@ body{
 h1 {
     color: lawngreen;
 }
+
+.main-menu{
+    --main-menu-height: 4em;
+    height: var(--main-menu-height );
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main-menu__logo{
+    --logo-width: 9em;
+    width: var(--logo-width);
+    text-align: center;
+}
+
+.main-menu__list{
+    position: absolute;
+    margin-left: var(--main-margin);
+    padding: 0;
+    border-bottom: 1px var(--accent-color) solid;
+}
+
+.main-menu__list > li{
+    display: inline;
+    color: var(--second-color);
+    font-size: 24px;
+}
+
+.main-menu__login-box{
+    margin-left: auto;
+    margin-right: 2em;
+}
+
+.main-content{
+    min-height: max-content;
+    margin: 0 var(--main-margin) 0 var(--main-margin);
+    background-color: var(--first-color);
+}
+
+.copyright-footer{
+    margin: 0 auto 0 auto;
+    width: 95vw;
+    border-top: var(--accent-color) 1px solid;
+    text-align: center;
+}
