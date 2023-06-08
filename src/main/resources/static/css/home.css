@@ -9,7 +9,7 @@ body{
     background-color: var(--first-color);
 }
 h1 {
-    color: lawngreen;
+    color: var(--second-color);
 }
 
 .main-menu{
