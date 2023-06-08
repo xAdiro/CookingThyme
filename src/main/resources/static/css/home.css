@@ -5,8 +5,12 @@
     --accent-color: #43eca5;
 }
 body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
     background-color: var(--first-color);
+    font-family: "Roboto Light", sans-serif;
 }
 h1 {
     color: var(--second-color);
@@ -46,13 +50,13 @@ h1 {
 }
 
 .main-content{
-    min-height: max-content;
+    min-height: 50vh;
     margin: 0 var(--main-margin) 0 var(--main-margin);
     background-color: var(--first-color);
 }
 
 .copyright-footer{
-    margin: 0 auto 0 auto;
+    margin: auto auto 1em auto;
     width: 95vw;
     border-top: var(--accent-color) 1px solid;
     text-align: center;
