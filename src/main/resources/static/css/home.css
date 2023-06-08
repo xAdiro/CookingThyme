@@ -1,3 +1,13 @@
+:root{
+    --main-margin: 20vw;
+    --first-color: white;
+    --second-color: #8DFF65;
+    --accent-color: #43eca5;
+}
+body{
+    margin: 0;
+    background-color: var(--first-color);
+}
 h1 {
     color: lawngreen;
 }
