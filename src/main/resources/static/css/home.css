@@ -4,7 +4,7 @@
     --main-margin: 10vw;
     --first-color: white;
     --second-color: #60b542;
-    --accent-color: #0bda85;
+    --accent-color: #43df72;
 }
 
 body {
@@ -42,6 +42,8 @@ h1 {
     font-style: italic;
     width: var(--logo-width);
     text-align: center;
+    text-decoration: none;
+    color: black;
     --logo-width: 6em;
 }
 
@@ -77,6 +79,7 @@ h1 {
 .main-menu__login-box__login-button {
     font-size: 20px;
     padding: 0.4em;
+    cursor: pointer;
     color: white;
     border: none;
     border-radius: 0.5em;
@@ -107,6 +110,7 @@ h1 {
     position: absolute;
     right: 1em;
     bottom: 6.5em;
+    display: none;
     overflow: scroll;
     width: 20vw;
     height: 50vh;
@@ -115,6 +119,7 @@ h1 {
     -moz-box-shadow: 8px 8px 24px 0 rgba(66, 68, 90, 1);
     -webkit-box-shadow: 8px 8px 24px 0 rgba(66, 68, 90, 1);
     box-shadow: 8px 8px 24px 0 rgba(66, 68, 90, 1);
+
 }
 
 .notifications-button {
@@ -123,6 +128,7 @@ h1 {
     bottom: 3em;
     width: 4em;
     height: 4em;
+    cursor: pointer;
     border-color: #2a2a2a;
     border-radius: 50%;
     background-color: white;
