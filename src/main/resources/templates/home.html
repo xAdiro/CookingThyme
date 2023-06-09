@@ -2,9 +2,56 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <link th:href="@{/css/home.css}" rel="stylesheet">
     <title>Title</title>
 </head>
 <body>
-    <h1>Hello to CookingThyme</h1>
+    <nav class="main-menu">
+        <a href="" class="main-menu__logo">Cooking<br>Thyme</a>
+        <ul class="main-menu__list">
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">Search Recipe</a>
+            </li>
+            <li>
+                <a href="">Your Recipes</a>
+            </li>
+            <li>
+                <a href="">Favourites</a>
+            </li>
+        </ul>
+        <div class="main-menu__login-box">
+            <button class="main-menu__login-box__login-button">Log In</button>
+        </div>
+    </nav>
+    <main class="main-content">
+        <section>
+            <h1>Welcome to Cooking Thyme!</h1>
+            <p>
+                Are you passionate about cooking or simply looking for some culinary inspiration? Look no further!
+                This platform is the perfect place to discover, create, and share delicious recipes with fellow food
+                enthusiasts from around the world.
+            </p>
+            <p>
+                But this platform isn't just about finding incredible recipes, it's also about connecting with a
+                vibrant community of food lovers. Share your own culinary creations, experiment with new flavors,
+                and engage in lively discussions with other passionate home cooks. Together, we can turn
+                the art of cooking into a shared adventure.
+            </p>
+            <p>
+                Join our recipe-sharing platform today and embark on a culinary journey like no other. Whether you're
+                here to share your secret family recipes or discover new flavors from around the globe, we're here
+                to make your cooking experience unforgettable. So put on your apron, grab your favorite utensils,
+                and let's get cooking!
+            </p>
+        </section>
+    </main>
+<!--    <div class="notifications-box"></div>-->
+<!--    <button class="notifications-button"></button>-->
+    <footer class="copyright-footer">
+        Adrian Rostek © 2023
+    </footer>
 </body>
 </html>
