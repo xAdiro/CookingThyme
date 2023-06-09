@@ -1,0 +1,20 @@
+version: "3"
+services:
+    mysql_db:
+        container_name: mysql_database
+        image: mysql:latest
+        ports:
+            - "3306:3306"
+        environment:
+            - MYSQL_DATABASE=cooking_thyme_db
+            - MYSQL_USER=${MYSQL_USER}
+            - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+            - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+        volumes:
+            - "./db:/var/lib/mysql"
+    adminer:
+        image: adminer:latest
+        environment:
+            ADMINER_DEFAULT_SERVER: mysql_db
+        ports:
+            - "8090:8080"
